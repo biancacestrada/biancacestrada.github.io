@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+body {
+
+    background-color: #3e4242;
+}
+
+p {
+    position: center;
+    top: 250px;
+    font: normal 18px Oswald, sans-serif;
+    color: grey;
+}
+
+p a {
+    text-decoration: none;
+    font: bold 18px Oswald, sans-serif;
+    color: pink;
+}
+
+p a:hover {
+    border-bottom: 1px dotted pink;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    background-color: #1c2020;
+    float: left;
+    list-style: none;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 26px;
+    font: bold 30pt Oswald, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+}
+
+#blue {
+    border-top: 2px solid blue;
+}
+
+#blue:hover {
+    background-color: blue;
+}
+
+#indigo {
+    border-top: 2px solid indigo;
+}
+
+#indigo:hover {
+    background-color: indigo;
+}
+
+#purple {
+    border-top: 2px solid purple;
+}
+
+#purple:hover {
+    background-color: purple;
+}
+
+.nav ul {
+    display: none;
+}
+
+.nav li:hover ul {
+    display: block;
+    position: absolute;
+    list-style: none;
+    background-color: #1c2020;
+    padding: 0px;
+}
+
+.nav li:hover li {
+    display: block;
+    float: none;
+}
+
+.nav li:hover li a {
+    width: 90px;
+    font: normal 14px Oswald, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+ animation: slide 60s linear infinite alternate;
+  background-image: url("https://i.pinimg.com/736x/ef/d7/d9/efd7d98d4ea49ea3c7d7fbf37e74bef5--dark-phone-wallpapers-phones.jpg");
+  background-repeat: repeat;
+}
+
+@keyframes slide {
+  to {
+    background-position: 0 50%;
+  }
+}
+
+  padding: 75pt;
+  margin: 0;
+  min-height: 100vh;
+
+    
+
+    
+}
+
+.sidebar_wrapper {
+  width: 100%;
+  max-width: 26rem;
+}
+
+.about-dev {
+  width: 100%;
+  max-width: 26rem;
+  margin: auto;
+  box-shadow: 2px 4px 2px -2px rgba(0, 0, 0, .3), -2px -4px 15px -2px rgba(0, 0, 0, .2);
+  animation: profile_in 0.8s;
+}
+
+@keyframes profile_in {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* profile card header */
+
+.profile-card_header-container {
+  max-width: 15rem;
+  margin: auto;
+}
+
+.profile-card_header {
+  background: ##707393;
+
+  padding: 1.5em 1.5em 1em;
+  text-align:center; ;
+}
+
+
+/* profile picture */
+
+.profile-card_header-imgbox {
+  display: block;
+  width: 9.5rem;
+  height: 9.5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: auto;
+  background:#707393;
+  border: 0.375rem solid rgba(250, 214, 195, 1);
+}
+
+.profile-card_header img {
+  max-width: 150%;
+}
+
+
+/* header heading */
+
+.profile-card_header h1 {
+  color: #f3f3f3;
+  font-size: 2.6rem;
+  margin-top: 0.8em;
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+  position: relative;
+}
+
+
+/* header text span */
+
+.profile-card_header h1 span {
+  font-size: 1.2rem;
+  font-weight: 300;
+  display: block;
+  color: rgba(220, 220, 220, .95);
+  margin-top: 0.25em;
+  padding-top: 0.25em;
+  border-top: 0.075em solid rgba(250, 214, 195, 1);
+}
+
+
+/* about section */
+
+.profile-card_about {
+  line-height: 1.5;
+  background: #ededed;
+  padding: 1.5em 2rem;
+  color: #222;
+  font-family: 'Lato', sans-serif;
+}
+
+.profile-card_about h2 {
+  margin: 0;
+  display: inline-block;
+  color: 34353a;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  position: relative;
+  z-index: 2;
+  vertical-align: middle;
+}
+
+.profile-card_about h2::before {
+  content: '';
+  position: absolute;
+  width: 110%;
+  /*  max-width: 13.8rem;
+*/
+  height: 1rem;
+  background: #707393;
+  left: -5px;
+  top: 50%;
+  z-index: -1;
+}
+
+.profile-card_about p {
+  font-weight: 300;
+}
+
+
+
