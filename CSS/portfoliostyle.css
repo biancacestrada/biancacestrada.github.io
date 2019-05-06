@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body {
+ animation: slide 60s linear infinite alternate;
+  background-image: url("https://i.pinimg.com/736x/ef/d7/d9/efd7d98d4ea49ea3c7d7fbf37e74bef5--dark-phone-wallpapers-phones.jpg");
+  background-repeat: repeat;
+}
+
+
+.nav {
+    margin: 0;
+    padding: 0;
+    background-color: #1c2020;
+    float: left;
+    list-style: none;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 26px;
+    font: bold 22pt Oswald, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+}
+
+
+
+#blue {
+    border-top: 2px solid blue;
+}
+
+#blue:hover {
+    background-color: blue;
+}
+
+#indigo {
+    border-top: 2px solid indigo;
+}
+
+#indigo:hover {
+    background-color: indigo;
+}
+
+#purple {
+    border-top: 2px solid purple;
+}
+
+#purple:hover {
+    background-color: purple;
+}
+
+.nav ul {
+    display: none;
+}
+
+.nav li:hover ul {
+    display: block;
+    position: absolute;
+    list-style: none;
+    background-color: #1c2020;
+    padding: 0px;
+}
+
+.nav li:hover li {
+    display: block;
+    float: none;
+}
+
+.nav li:hover li a {
+    width: 90px;
+    font: normal 14px Oswald, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#ps {
+  margin: 10em auto
+  text-align: center;
+  font color: white
+}
+
+#image  {
+margin: 10em auto;
+  text-align: center;
+  font:bold 22pt Oswald, sans-serif 
+
+}
+
+
+
+@keyframes slide {
+  to {
+    background-position: 0 50%;
+  }
+}
+
